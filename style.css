@@ -1,0 +1,59 @@
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    margin-bottom: 50px;
+}
+  
+.topnav #myLinks {
+    display: none;
+}
+  
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+  
+.topnav a.icon {
+    background: rgb(128, 192, 221);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  
+.topnav a:hover {
+    background-color: rgb(121, 214, 226);
+    color: rgb(253, 253, 253);
+}
+  
+.active {
+    background-color: #049faa;
+    color: white;
+}
+
+#password:focus ~ .bi-bi-eye{
+    margin-left: -30px !important; 
+    cursor: pointer !important;
+    z-index: 5 !important;
+}
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+
+.form-field small {
+    color: var(--error-color);
+}
